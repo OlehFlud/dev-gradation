@@ -1,0 +1,49 @@
+from docx import Document
+
+# Створення нового документа
+doc = Document()
+doc.add_heading('Градація рівнів розробників: Frontend (React) та Backend (Node.js)', 0)
+
+# Опис для Frontend (React) Рівнів
+doc.add_heading('Frontend (React) Рівні:', level=1)
+frontend_levels_text = """
+1. Trainee (Стажер): Основи HTML, CSS, JavaScript. Початкові знання React, Git.
+2. Junior (Джуніор):
+   - Low Junior: Початкові навички роботи з React, без оптимізації та патернів.
+   - Strong Junior: Знання Redux, TypeScript, оптимізація.
+3. Middle (Мідл):
+   - Low Middle: Розуміє архітектуру додатків, працює з API, оптимізація.
+   - Strong Middle: Має досвід роботи з Next.js, пише високопродуктивний код.
+4. Senior (Сеньйор):
+   - Low Senior: Глибоке знання React, оптимізація, досвід з архітектурними підходами.
+   - Strong Senior: Проводить код-рев’ю, архітектуру, проектує масштабовані рішення.
+5. Lead Frontend Developer: Керує командою, приймає рішення щодо технологій.
+6. Frontend Architect: Працює над глобальною архітектурою проекту.
+"""
+
+doc.add_paragraph(frontend_levels_text)
+
+# Опис для Backend (Node.js) Рівнів
+doc.add_heading('Backend (Node.js) Рівні:', level=1)
+backend_levels_text = """
+1. Trainee (Стажер): Основи JavaScript, асинхронність, базові знання Node.js.
+2. Junior (Джуніор):
+   - Low Junior: Пише базові API на Express, NestJS.
+   - Strong Junior: Знає кешування, авторизацію, працює з ORM.
+3. Middle (Мідл):
+   - Low Middle: Пише мікросервіси, працює з GraphQL, кешуванням.
+   - Strong Middle: Має досвід роботи з Docker, Kubernetes, CI/CD.
+4. Senior (Сеньйор):
+   - Low Senior: Знає мікросервісну архітектуру, оптимізує запити, бази даних.
+   - Strong Senior: Проводить архітектурні рішення, менторить команду.
+5. Lead Backend Developer: Керує командою бекенд-розробників.
+6. Backend Architect: Проектує архітектуру високонавантажених систем.
+"""
+
+doc.add_paragraph(backend_levels_text)
+
+# Збереження документа
+output_word_path = '/mnt/data/it_developer_hierarchy_with_branches.docx'
+doc.save(output_word_path)
+
+output_word_path

@@ -54,7 +54,7 @@ export default function Home() {
             </h2>
               <div className="mb-8 position-relative w-full">
                 <h3 className="text-lg font-medium text-gray-700 mb-2">Three Levels Visualization</h3>
-                <img src='public/schema-2.png' className='w-[700px] h-[400px] mx-auto' alt=""/>
+                <img src='schema-2.png' className='w-[700px] h-[400px] mx-auto' alt=""/>
               </div>
               <div className="mt-10">
                 <h3 className="text-lg font-medium text-gray-700 mb-4">Detailed Skill Levels</h3>

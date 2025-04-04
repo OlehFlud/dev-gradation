@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "cross-env DISABLE_ESLINT_PLUGIN=true vite",
     "build": "vite build",
-    "start": "NODE_ENV=production node dist/index.js -p 5444",
+    "start": "NODE_ENV=production node dist/index.js",
     "check": "tsc"
   },
   "dependencies": {
